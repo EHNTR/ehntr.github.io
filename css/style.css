@@ -21,10 +21,11 @@ header {
     text-align: center;
 }
 
-    header h1 {
-        font-family: 'Karrilee', sans-serif;
+      header h1 {
+        font-family: 'Karrilee';
         font-size: 7rem;
         font-weight: normal;
+        font-style: normal;
     }
 
     main h2 {
