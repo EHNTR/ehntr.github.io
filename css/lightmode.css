@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Eina03-Regular ☞';
+    src: url('../font/Eina03-Regular.woff2') format('woff2'), url('../font/Eina03-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
     background-color: white; /* Light background */
@@ -177,7 +184,7 @@ main {
         font-weight: bold;
         color: #222;
         text-decoration: none;
-        transition: color 0.3s ease;
+        transition: color 0.3s ease; 
     }
 
         .portfolio-item a:hover {
