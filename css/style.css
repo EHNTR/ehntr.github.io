@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Eina03-Regular ☞';
+    src: url('../font/Eina03-Regular.woff2') format('woff2'), url('../font/Eina03-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #121212; /* Black background */
     font-family: 'Eina03-Regular ☞', Helvetica, sans-serif;
