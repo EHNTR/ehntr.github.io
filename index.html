@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,62 +6,63 @@
     <title>Portfolio</title>
     <link id="theme-stylesheet" rel="stylesheet" href="css/style.css"> <!-- Added ID here -->
     <link rel="preload" href="KarrileeRegular.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-    /* Center the button in the header */
-    header {
-        position: relative; /* Allows positioning of the toggle button relative to the header */
-        text-align: center;
-        margin-top: 20px;
-    }
+    <link rel="preload" href="Eina03-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        /* Center the button in the header */
+        header {
+            position: relative; /* Allows positioning of the toggle button relative to the header */
+            text-align: center;
+            margin-top: 20px;
+        }
 
-    #toggle-theme {
-        position: absolute;
-        top: 10px; /* Adjust as needed for vertical positioning */
-        right: 10px; /* Adjust as needed for horizontal positioning */
-        font-size: 35px;
-        padding: 10px 20px;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        transition: transform 0.3s ease, color 0.3s ease;
-    }
+        #toggle-theme {
+            position: absolute;
+            top: 10px; /* Adjust as needed for vertical positioning */
+            right: 10px; /* Adjust as needed for horizontal positioning */
+            font-size: 35px;
+            padding: 10px 20px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
 
-    /* Hover effect for button */
-    #toggle-theme:hover {
-        transform: scale(1.2); /* Slightly enlarge the button on hover */
-    }
+            /* Hover effect for button */
+            #toggle-theme:hover {
+                transform: scale(1.2); /* Slightly enlarge the button on hover */
+            }
 
-    /* Dark mode button text (moon) color */
-    .dark-mode #toggle-theme {
-        color: white; /* White text for moon icon */
-    }
+        /* Dark mode button text (moon) color */
+        .dark-mode #toggle-theme {
+            color: white; /* White text for moon icon */
+        }
 
-    /* Light mode button text (sun) color */
-    .light-mode #toggle-theme {
-        color: black; /* Black text for sun icon */
-    }
+        /* Light mode button text (sun) color */
+        .light-mode #toggle-theme {
+            color: black; /* Black text for sun icon */
+        }
 
-    /* Ensuring light and dark modes are applied to the body */
-    body.dark-mode {
-        background-color: #121212; /* Dark background for dark mode */
-        color: white; /* White text for better contrast */
-    }
+        /* Ensuring light and dark modes are applied to the body */
+        body.dark-mode {
+            background-color: #121212; /* Dark background for dark mode */
+            color: white; /* White text for better contrast */
+        }
 
-    body.light-mode {
-        background-color: white; /* Light background for light mode */
-        color: black; /* Black text for better contrast */
-    }
+        body.light-mode {
+            background-color: white; /* Light background for light mode */
+            color: black; /* Black text for better contrast */
+        }
 
-    /* Ensuring consistent positioning for the "Portfolio" text */
-    h2 {
-        margin-top: 10px; /* Consistent top margin */
-    }
+        /* Ensuring consistent positioning for the "Portfolio" text */
+        h2 {
+            margin-top: 10px; /* Consistent top margin */
+        }
 
-    /* Override any potential inconsistencies in light mode */
-    body.light-mode h2 {
-        margin-top: 10px; /* Ensure it's aligned properly */
-    }
-</style>
+        /* Override any potential inconsistencies in light mode */
+        body.light-mode h2 {
+            margin-top: 10px; /* Ensure it's aligned properly */
+        }
+    </style>
 
 </head>
 <body class="dark-mode">
