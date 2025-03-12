@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Karrilee';
+    src: url('../font/KarrileeRegular.woff2') format('woff2'), url('../font/KarrileeRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     background-color: white; /* Light background */
     font-family: 'Eina03-Regular ☞', sans-serif;
@@ -21,7 +29,7 @@ header {
     text-align: center;
 }
 
-       header h1 {
+    header h1 {
         font-family: 'Karrilee';
         font-size: 7rem;
         font-weight: normal;
