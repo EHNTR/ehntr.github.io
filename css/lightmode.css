@@ -1,48 +1,43 @@
-/* Modern Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Font Faces */
 @font-face {
     font-family: 'Karrilee';
-    src: url('../font/KarrileeRegular.woff2') format('woff2'),
-         url('../font/KarrileeRegular.woff') format('woff');
+    src: url('../font/KarrileeRegular.woff2') format('woff2'), url('../font/KarrileeRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Eina03-Regular ☞';
-    src: url('../font/Eina03-Regular.woff2') format('woff2'),
-         url('../font/Eina03-Regular.woff') format('woff');
+    src: url('../font/Eina03-Regular.woff2') format('woff2'), url('../font/Eina03-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-/* General Styles */
 body {
-    background-color: #121212;
-    font-family: 'Eina03-Regular ☞', Helvetica, sans-serif;
+    background-color: white;
+    font-family: 'Eina03-Regular ☞', sans-serif;
     font-weight: normal;
-    color: white;
+    color: #222;
     line-height: 1.6;
 }
 
-/* Header Styling */
 header {
-    background-color: #121212;
-    color: white;
+    background-color: white;
+    color: #222;
     padding: 20px 40px;
     text-align: center;
 }
 
 header h1 {
-    font-family: 'Karrilee', sans-serif;
+    font-family: 'Karrilee';
     font-size: 7rem;
     font-weight: normal;
+    font-style: normal;
 }
 
 main h2 {
@@ -51,7 +46,6 @@ main h2 {
     font-weight: normal;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -65,16 +59,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #222;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #00aaff;
+    color: #0077cc;
 }
 
-/* Main Content Layout */
 main {
     display: flex;
     justify-content: center;
@@ -82,20 +75,18 @@ main {
     padding: 20px;
 }
 
-/* Portfolio Page Styling */
 #portfolio {
     width: 80%;
     margin: 50px auto;
-    text-align: center;
 }
 
 #portfolio h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
+    text-align: center;
     padding-bottom: 5px;
 }
 
-/* Portfolio Sections */
 .portfolio-sections {
     display: flex;
     justify-content: space-between;
@@ -104,17 +95,19 @@ main {
 
 .portfolio-section {
     width: 45%;
-    background: #222;
+    background: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: height 0.3s ease, padding-bottom 0.3s ease;
     overflow: hidden;
     min-height: 75px;
     height: 75px;
+    border: 1px solid #ddd;
 }
 
 .portfolio-section:not(.expanded) {
+    height: 75px;
     padding-bottom: 0;
 }
 
@@ -126,14 +119,14 @@ main {
 .portfolio-section h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: white;
+    text-align: center;
+    color: #222;
     cursor: pointer;
     position: relative;
-    text-align: center;
 }
 
 .portfolio-section h3::after {
-    content: "\25BC";
+    content: "▼";
     font-size: 1.5rem;
     position: absolute;
     right: 10px;
@@ -145,7 +138,6 @@ main {
     transform: rotate(180deg);
 }
 
-/* Portfolio Items */
 .portfolio-items {
     display: flex;
     flex-direction: column;
@@ -157,16 +149,16 @@ main {
     width: 55%;
     padding: 15px;
     font-size: 1.4rem;
-    background-color: #333;
+    background-color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .portfolio-item:hover {
     transform: scale(1.08);
-    background-color: #444;
+    background-color: #e0e0e0;
 }
 
 .portfolio-item img {
@@ -178,26 +170,24 @@ main {
 .portfolio-item a {
     font-size: 1.2rem;
     font-weight: bold;
-    color: white;
+    color: #222;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; 
 }
 
 .portfolio-item a:hover {
-    color: #00aaff;
+    color: #0077cc;
 }
 
-/* Centered Sections */
 .centered-section {
     margin: 50px auto;
     width: 50%;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #121212;
-    color: white;
+    background: #ffffff;
+    color: #222;
     margin-top: 50px;
 }
