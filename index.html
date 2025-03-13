@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link id="theme-stylesheet" rel="stylesheet" href="css/style.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="css/style.css"> <!-- Added ID here -->
     <link rel="preload" href="KarrileeRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="Eina03-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <style>
+        /* Center the button in the header */
         header {
-            position: relative;
+            position: relative; /* Allows positioning of the toggle button relative to the header */
             text-align: center;
             margin-top: 20px;
         }
 
         #toggle-theme {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 10px; /* Adjust as needed for vertical positioning */
+            right: 10px; /* Adjust as needed for horizontal positioning */
             font-size: 35px;
             padding: 10px 20px;
             border: none;
@@ -26,120 +27,137 @@
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
-        #toggle-theme:hover {
-            transform: scale(1.2);
-        }
+            /* Hover effect for button */
+            #toggle-theme:hover {
+                transform: scale(1.2); /* Slightly enlarge the button on hover */
+            }
 
+        /* Dark mode button text (moon) color */
         .dark-mode #toggle-theme {
-            color: white;
+            color: white; /* White text for moon icon */
         }
 
+        /* Light mode button text (sun) color */
         .light-mode #toggle-theme {
-            color: black;
+            color: black; /* Black text for sun icon */
         }
 
+        /* Ensuring light and dark modes are applied to the body */
         body.dark-mode {
-            background-color: #121212;
-            color: white;
+            background-color: #121212; /* Dark background for dark mode */
+            color: white; /* White text for better contrast */
         }
 
         body.light-mode {
-            background-color: white;
-            color: black;
+            background-color: white; /* Light background for light mode */
+            color: black; /* Black text for better contrast */
         }
 
+        /* Ensuring consistent positioning for the "Portfolio" text */
         h2 {
-            margin-top: 10px;
+            margin-top: 10px; /* Consistent top margin */
         }
 
+        /* Override any potential inconsistencies in light mode */
         body.light-mode h2 {
-            margin-top: 10px;
+            margin-top: 10px; /* Ensure it's aligned properly */
         }
     </style>
+
 </head>
 <body class="dark-mode">
+    <!-- Start in dark mode by default -->
+
     <header>
         <h1>elise hunter</h1>
-        <button id="toggle-theme">⏾</button>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+        <!-- Button to toggle between light and dark mode -->
+        <button id="toggle-theme">⏾</button> <!-- Default to moon (dark mode) -->
+            <section id="portfolio">
+                <h2>Portfolio</h2>
 
-            <div class="portfolio-section centered-section">
-                <h3>2D</h3>
-                <h4>via Behance</h4>
-                <div class="portfolio-items">
-                    <div class="portfolio-item">
-                        <a href="https://www.behance.net/gallery/221250871/Cakewalkin-UI">'Cakewalkin' UI</a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="#">'Apuckalypse' UI</a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="#">'Creature Quest Adventure' UI</a>
+                <div class="portfolio-section centered-section">
+                    <h3>2D</h3>
+                    <h4>via Behance</h4>
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <a href="https://www.behance.net/gallery/221250871/Cakewalkin-UI">'Cakewalkin' UI</a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#">'Apuckalypse' UI</a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#">'Creature Quest Adventure' UI</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-section centered-section">
-                <h3>3D</h3>
-                <h4>via Behance</h4>
-                <div class="portfolio-items">
-                    <div class="portfolio-item">
-                        <a href="#">Ice hockey models</a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="#">Donut model</a>
+                <div class="portfolio-section centered-section">
+                    <h3>3D</h3>
+                    <h4>via Behance</h4>
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <a href="#">Ice hockey models</a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#">Donut model</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-section centered-section">
-                <h3>Games</h3>
-                <h4>via itch.io</h4>
-                <div class="portfolio-items">
-                    <div class="portfolio-item">
-                        <a href="#">'Strike Air Hockey'</a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="#">'Shooter Game'</a>
+                <div class="portfolio-section centered-section">
+                    <h3>Games</h3>
+                    <h4>via itch.io</h4>
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <a href="#">'Strike Air Hockey'</a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#">'Shooter Game'</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
     </header>
 
-    <footer>
-        <p>&copy; 2025 Elise Hunter</p>
-    </footer>
+      
 
-    <script>
-        const sectionHeadings = document.querySelectorAll('.portfolio-section h3');
+        <footer>
+            <p>&copy; 2025 Elise Hunter</p>
+        </footer>
 
-        sectionHeadings.forEach(heading => {
-            const section = heading.parentElement;
-            section.classList.remove('expanded');
-            heading.addEventListener('click', function () {
-                section.classList.toggle('expanded');
+        <script>
+            const sectionHeadings = document.querySelectorAll('.portfolio-section h3');
+
+            sectionHeadings.forEach(heading => {
+                const section = heading.parentElement;
+                section.classList.remove('expanded');
+
+                heading.addEventListener('click', function () {
+                    section.classList.toggle('expanded');
+                });
             });
-        });
 
-        const toggleButton = document.getElementById('toggle-theme');
-        const themeStylesheet = document.getElementById('theme-stylesheet');
-        const body = document.body;
+            const toggleButton = document.getElementById('toggle-theme');
+            const themeStylesheet = document.getElementById('theme-stylesheet');
+            const body = document.body;
 
-        toggleButton.addEventListener('click', () => {
-            if (body.classList.contains('dark-mode')) {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
-                themeStylesheet.setAttribute('href', 'css/lightmode.css');
-                toggleButton.textContent = '☀︎';
-            } else {
-                body.classList.remove('light-mode');
-                body.classList.add('dark-mode');
-                themeStylesheet.setAttribute('href', 'css/style.css');
-                toggleButton.textContent = '⏾';
-            }
-        });
-    </script>
-</body>
+            toggleButton.addEventListener('click', () => {
+                // Toggle the theme
+                if (body.classList.contains('dark-mode')) {
+                    // Switch to light mode
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                    themeStylesheet.setAttribute('href', 'css/lightmode.css'); // Switch to light mode CSS
+                    toggleButton.textContent = '☀︎'; // Sun icon for light mode
+                } else {
+                    // Switch to dark mode
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                    themeStylesheet.setAttribute('href', 'css/style.css'); // Switch to dark mode CSS
+                    toggleButton.textContent = '⏾'; // Moon icon for dark mode
+                }
+            });
+        </script>
+
+    </body>
 </html>
