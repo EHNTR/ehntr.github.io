@@ -18,6 +18,7 @@
     font-style: normal;
 }
 
+
 body {
     background-color: white;
     font-family: 'Eina03-Regular ☞', sans-serif;
@@ -33,12 +34,12 @@ header {
     text-align: center;
 }
 
-header h1 {
-    font-family: 'Karrilee';
-    font-size: 7rem;
-    font-weight: normal;
-    font-style: normal;
-}
+    header h1 {
+        font-family: 'Karrilee';
+        font-size: 7rem;
+        font-weight: normal;
+        font-style: normal;
+    }
 
 main h2 {
     font-family: 'Eina03-Regular ☞', sans-serif;
@@ -53,20 +54,20 @@ nav ul {
     margin-top: 10px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
+    nav ul li {
+        margin: 0 15px;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
 
-nav ul li a:hover {
-    color: #0077cc;
-}
+            nav ul li a:hover {
+                color: #0077cc;
+            }
 
 main {
     display: flex;
@@ -80,12 +81,12 @@ main {
     margin: 50px auto;
 }
 
-#portfolio h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    text-align: center;
-    padding-bottom: 5px;
-}
+    #portfolio h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
 
 .portfolio-sections {
     display: flex;
@@ -106,37 +107,38 @@ main {
     border: 1px solid #ddd;
 }
 
-.portfolio-section:not(.expanded) {
-    height: 75px;
-    padding-bottom: 0;
-}
+    .portfolio-section:not(.expanded) {
+        height: 75px;
+        padding-bottom: 0;
+    }
 
-.portfolio-section.expanded {
-    height: auto;
-    padding-bottom: 20px;
-}
+    .portfolio-section.expanded {
+        height: auto;
+        padding-bottom: 20px;
+    }
 
-.portfolio-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #222;
-    cursor: pointer;
-    position: relative;
-}
+    .portfolio-section h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #222;
+        cursor: pointer;
+        position: relative;
+    }
 
-.portfolio-section h3::after {
-    content: "▼";
-    font-size: 1.5rem;
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    transition: transform 0.3s ease;
-}
+        .portfolio-section h3::after {
+            content: "▼";
+            font-size: 1.5rem;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            transition: transform 0.3s ease;
+        }
 
-.portfolio-section.expanded h3::after {
-    transform: rotate(180deg);
-}
+
+    .portfolio-section.expanded h3::after {
+        transform: rotate(180deg);
+    }
 
 .portfolio-items {
     display: flex;
@@ -156,28 +158,28 @@ main {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.portfolio-item:hover {
-    transform: scale(1.08);
-    background-color: #e0e0e0;
-}
+    .portfolio-item:hover {
+        transform: scale(1.08);
+        background-color: #e0e0e0;
+    }
 
-.portfolio-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
+    .portfolio-item img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
 
-.portfolio-item a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #222;
-    text-decoration: none;
-    transition: color 0.3s ease; 
-}
+    .portfolio-item a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #222;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 
-.portfolio-item a:hover {
-    color: #0077cc;
-}
+        .portfolio-item a:hover {
+            color: #0077cc;
+        }
 
 .centered-section {
     margin: 50px auto;
