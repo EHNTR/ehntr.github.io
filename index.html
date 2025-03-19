@@ -71,7 +71,7 @@
     <header>
         <h1>elise hunter</h1>
         <!-- Button to toggle between light and dark mode -->
-        <button id="toggle-theme">⏾</button> <!-- Default to moon (dark mode) -->
+        <button id="toggle-theme">☀︎</button> <!-- Default to moon (dark mode) -->
             <section id="portfolio">
                 <h2>Portfolio</h2>
 
@@ -148,13 +148,13 @@
                     body.classList.remove('dark-mode');
                     body.classList.add('light-mode');
                     themeStylesheet.setAttribute('href', 'css/lightmode.css'); // Switch to light mode CSS
-                    toggleButton.textContent = '☀︎'; // Sun icon for light mode
+                    toggleButton.textContent = '⏾'; // Sun icon for light mode
                 } else {
                     // Switch to dark mode
                     body.classList.remove('light-mode');
                     body.classList.add('dark-mode');
                     themeStylesheet.setAttribute('href', 'css/style.css'); // Switch to dark mode CSS
-                    toggleButton.textContent = '⏾'; // Moon icon for dark mode
+                    toggleButton.textContent = '☀︎'; // Moon icon for dark mode
                 }
             });
         </script>
