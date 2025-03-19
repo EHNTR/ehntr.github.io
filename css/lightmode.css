@@ -202,3 +202,7 @@ h2, h3, p, .portfolio-item a, .portfolio-section h3 {
 footer a:hover {
     color: #005fa3;
 }
+
+.portfolio-section h3, .portfolio-item a, h2, h3, p {
+    color: #222 !important;
+}
