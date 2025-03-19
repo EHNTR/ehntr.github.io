@@ -194,10 +194,6 @@ footer a {
     transition: color 0.3s ease;
 }
 
-h2, h3, p, .portfolio-item a, .portfolio-section h3 {
-    color: #222 !important;
-}
-
 footer a:hover {
     color: #005fa3;
 }
