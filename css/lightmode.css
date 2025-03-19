@@ -172,7 +172,7 @@ main {
     .portfolio-item a {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #222;
+        color: #ffffff;
         text-decoration: none;
         transition: color 0.3s ease;
     }
@@ -190,6 +190,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: #ffffff;
-    color: #222;
+    color: #ffffff;
     margin-top: 50px;
 }
