@@ -172,7 +172,7 @@ main {
     .portfolio-item a {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #ffffff;
+        color: #222;
         text-decoration: none;
         transition: color 0.3s ease;
     }
