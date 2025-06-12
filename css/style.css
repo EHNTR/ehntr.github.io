@@ -29,7 +29,7 @@ body {
 header {
     background-color: #121212;
     color: white;
-    padding: 20px 40px;
+    padding: 20px 20px 10px; 
     text-align: center;
 }
 
@@ -37,8 +37,16 @@ header {
     max-width: 400px;
     height: auto;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px; 
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+}
+
+#portfolio h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0;
 }
 
 main h2 {
@@ -78,14 +86,7 @@ main {
 
 #portfolio {
     width: 80%;
-    margin: 50px auto;
-}
-
-#portfolio h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    text-align: center;
-    padding-bottom: 5px;
+    margin: 30px auto 50px; 
 }
 
 .portfolio-sections {
