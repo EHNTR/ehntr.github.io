@@ -33,18 +33,19 @@ header {
     text-align: center;
 }
 
-    header h1 {
-        font-family: 'Karrilee', sans-serif;
-        font-size: 7rem;
-        font-weight: normal;
-        font-style: normal;
-    }
+.logo {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+}
 
-    main h2 {
-        font-family: 'Eina03-Regular ☞', sans-serif;
-        font-size: 5rem;
-        font-weight: normal;
-    }
+main h2 {
+    font-family: 'Eina03-Regular ☞', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+}
 
 nav ul {
     list-style: none;
@@ -53,20 +54,20 @@ nav ul {
     margin-top: 10px;
 }
 
-    nav ul li {
-        margin: 0 15px;
-    }
+nav ul li {
+    margin: 0 15px;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
 
-            nav ul li a:hover {
-                color: #00aaff;
-            }
+nav ul li a:hover {
+    color: #00aaff;
+}
 
 main {
     display: flex;
@@ -80,12 +81,12 @@ main {
     margin: 50px auto;
 }
 
-    #portfolio h2 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-        text-align: center;
-        padding-bottom: 5px;
-    }
+#portfolio h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
 
 .portfolio-sections {
     display: flex;
@@ -105,37 +106,37 @@ main {
     height: 75px; 
 }
 
-    .portfolio-section:not(.expanded) {
-        height: 75px; 
-        padding-bottom: 0;
-    }
+.portfolio-section:not(.expanded) {
+    height: 75px; 
+    padding-bottom: 0;
+}
 
-    .portfolio-section.expanded {
-        height: auto; /* Expand height when expanded */
-        padding-bottom: 20px;
-    }
+.portfolio-section.expanded {
+    height: auto;
+    padding-bottom: 20px;
+}
 
-    .portfolio-section h3 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-        text-align: center;
-        color: white;
-        cursor: pointer;
-        position: relative;
-    }
+.portfolio-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
 
-        .portfolio-section h3::after {
-            content: "▼";
-            font-size: 1.5rem;
-            position: absolute;
-            right: 10px;
-            top: 5px;
-            transition: transform 0.3s ease;
-        }
+.portfolio-section h3::after {
+    content: "▼";
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    transition: transform 0.3s ease;
+}
 
-    .portfolio-section.expanded h3::after {
-        transform: rotate(180deg);
-    }
+.portfolio-section.expanded h3::after {
+    transform: rotate(180deg);
+}
 
 .portfolio-items {
     display: flex;
@@ -155,29 +156,28 @@ main {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-    .portfolio-item:hover {
-        transform: scale(1.08); 
-        background-color: #444; 
-    }
+.portfolio-item:hover {
+    transform: scale(1.08); 
+    background-color: #444; 
+}
 
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
-    .portfolio-item img {
-        width: 100%;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
+.portfolio-item a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-    .portfolio-item a {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-        .portfolio-item a:hover {
-            color: #00aaff;
-        }
+.portfolio-item a:hover {
+    color: #00aaff;
+}
 
 .centered-section {
     margin: 50px auto;
@@ -191,5 +191,3 @@ footer {
     color: white;
     margin-top: 50px;
 }
-
- 
